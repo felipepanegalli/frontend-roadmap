@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+@layer components {
+  .fp-form {
+    @apply flex flex-col mb-6;
+  }
+
+  .fp-form > label {
+    @apply mb-1;
+  }
+
+  .fp-input {
+    @apply p-3 placeholder-gray-400 hover:bg-gray-100 text-gray-500;
+  }
+
+  .fp-form-inline {
+    @apply flex items-center my-1;
+  }
+
+  .fp-form-inline > input {
+    @apply mr-3 h-5 w-5;
+  }
+}

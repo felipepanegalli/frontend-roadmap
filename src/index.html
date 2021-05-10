@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form with TailwindCSS</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="bg-survey fixed w-full h-full top-0 left-0 bg-cover" style="z-index: -1;"></div>
+      <div
+        class="
+          container
+          h-52
+          mx-auto
+          text-white text-center
+          flex flex-col
+          justify-center
+        "
+      >
+        <h2 class="text-3xl font-bold mb-3">
+          Formulário de Pesquisa com TailwindCSS
+        </h2>
+        <p class="text-2xl">Rumo ao Frontend</p>
+      </div>
+      <div class="container mx-auto md:max-w-3xl">
+        <div class="bg-gray-900 p-5 md:p-10 text-white bg-opacity-95 mx-2">
+          <div class="fp-form">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Digite seu nome..."
+              class="fp-input"
+            />
+          </div>
+
+          <div class="fp-form">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Digite seu email..."
+              class="fp-input"
+            />
+          </div>
+
+          <div class="fp-form">
+            <label for="age">Idade</label>
+            <input
+              type="number"
+              id="age"
+              placeholder="Digite sua idade..."
+              class="fp-input"
+            />
+          </div>
+
+          <div class="fp-form">
+            <label for="work"
+              >Qual dessa opções descreve melhor seu estado atual?</label
+            >
+            <select id="work" class="fp-input">
+              <option value="" selected disabled>Selecione uma opção</option>
+              <option>Estudante</option>
+              <option>Tempo integral</option>
+              <option>Meio Período</option>
+              <option>Outro</option>
+            </select>
+          </div>
+
+          <div class="fp-form">
+            <label for="recommend"
+              >Você recomendaria o freeCodeCamp a um amigo?</label
+            >
+            <div class="fp-form-inline">
+              <input type="radio" name="recommend" id="recommendY" checked />
+              <label for="recommendY">Com certeza</label>
+            </div>
+
+            <div class="fp-form-inline">
+              <input type="radio" name="recommend" id="recommendM" />
+              <label for="recommendM">Talvez</label>
+            </div>
+
+            <div class="fp-form-inline">
+              <input type="radio" name="recommend" id="recommendN" />
+              <label for="recommendN">Não recomendo</label>
+            </div>
+          </div>
+
+          <div class="fp-form">
+            <label for="work">Qual foi seu curso favorito?</label>
+            <select id="work" class="fp-input">
+              <option value="" selected disabled>Selecione uma opção</option>
+              <option>Javascript</option>
+              <option>Node</option>
+              <option>Html + CSS</option>
+              <option>PHP</option>
+              <option>ReactJS</option>
+            </select>
+          </div>
+
+          <div class="fp-form">
+            <label for="work">
+              O que você gostaria que poderíamos acrescentar à Plataforma?
+              <small>Pode marcar + de 1</small>
+            </label>
+            <div class="fp-form-inline">
+              <input type="checkbox" name="chk-frontend" id="chk-frontend" />
+              <label for="chk-frontend">Projetos de Frontend</label>
+            </div>
+            <div class="fp-form-inline">
+              <input type="checkbox" name="chk-backend" id="chk-backend" />
+              <label for="chk-backend">Projetos de Backend</label>
+            </div>
+            <div class="fp-form-inline">
+              <input type="checkbox" name="chk-challenge" id="chk-challenge" />
+              <label for="chk-challenge">Desafios</label>
+            </div>
+            <div class="fp-form-inline">
+              <input type="checkbox" name="chk-videos" id="chk-videos" />
+              <label for="chk-videos">Seção de Vídeos</label>
+            </div>
+            <div class="fp-form-inline">
+              <input type="checkbox" name="chk-forum" id="chk-forum" />
+              <label for="chk-forum">Fórum</label>
+            </div>
+          </div>
+
+          <div class="fp-form">
+            <label for="txt-suggestion"
+              >Gostaria de deixar um comentário ou sugestão?</label
+            >
+            <textarea
+              name="txt-suggestion"
+              id="txt-suggestion"
+              cols="30"
+              rows="5"
+              class="fp-input"
+              placeholder="Deixe aqui seu comentário..."
+            ></textarea>
+          </div>
+
+          <button
+            type="button"
+            class="bg-green-600 py-3 px-10 w-full font-bold hover:bg-green-700"
+          >
+            Enviar
+          </button>
+        </div>
+      </div>
+  </body>
+</html>
